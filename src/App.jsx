@@ -5,7 +5,7 @@ import VantaRings from './components/vantaring'
 import {MyComponent} from './components/typingEffect.jsx'
 import './App.css'
 import GradientText from './components/gradienttext.jsx'
-import me from './assets/me.jpg'
+import me1 from './assets/me1.jpg'
 import { FaReact, FaNodeJs, FaPython, FaGit, FaJava } from "react-icons/fa";
 import { SiMongodb,SiTailwindcss,SiExpress,SiGithub,SiJavascript,SiCplusplus,SiC,SiLinkedin,SiCodechef,SiLeetcode,SiCodeforces } from 'react-icons/si';
 import AnimatedSkillCard from './components/animatedSkillCard.jsx';
@@ -76,8 +76,8 @@ const projects=[
           <div className='flex md:flex-row flex-col justify-center items-center md:items-start text-align-center xl:gap-50 gap-30 text-white m-10'>
             <div className='max-w-80 max-h-80'>
   <Fade>
-    <div className="border-8 md:m-10 border-purple-500 rounded-lg shadow-2xl">
-      <img src={me} alt="Me" className="object-cover" />
+    <div className="border-8 md:m-2 border-purple-500 rounded-lg shadow-2xl">
+      <img src={me1} alt="Me" className="object-cover" />
     </div>
   </Fade>
             </div>
