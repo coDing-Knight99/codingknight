@@ -15,11 +15,21 @@ const Navbar = () => {
             <h1 onClick={()=>{setmenu(false)
               document.body.classList.remove('overflow-hidden');
             }} className='absolute top-30 right-15 text-red-600 font-josefin text-3xl'><XIcon/></h1>
-            <h1  className='text-white font-josefin text-3xl'><Link  onClick={()=>setmenu(false)} to="Home" smooth={true} duration={500} offset={-120} className="cursor-pointer px-4 py-2"><NavGradientText text="Home" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></h1>
-            <h1  className='text-white font-josefin text-3xl'><Link  onClick={()=>setmenu(false)} to="About" smooth={true} duration={500} offset={-120} className="cursor-pointer px-4 py-2"><NavGradientText text="About" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></h1>
-            <h1  className='text-white font-josefin text-3xl'><Link  onClick={()=>setmenu(false)} to="Skills" smooth={true} duration={500} offset={-120} className="cursor-pointer px-4 py-2"><NavGradientText text="Skills" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></h1>
-            <h1  className='text-white font-josefin text-3xl'><Link  onClick={()=>setmenu(false)} to="Projects" smooth={true} duration={500} offset={-120} className="cursor-pointer px-4 py-2"><NavGradientText text="Projects" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></h1>
-            <h1  className='text-white font-josefin text-3xl'><Link  onClick={()=>setmenu(false)} to="Education" smooth={true} duration={500} offset={-120} className="cursor-pointer px-4 py-2"><NavGradientText text="Education" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></h1>
+            <h1  className='text-white font-josefin text-3xl'><Link  onClick={()=>{setmenu(false)
+              document.body.classList.remove('overflow-hidden')
+            }} to="Home" smooth={true} duration={500} offset={-120} className="cursor-pointer px-4 py-2"><NavGradientText text="Home" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></h1>
+            <h1  className='text-white font-josefin text-3xl'><Link  onClick={()=>{setmenu(false)
+              document.body.classList.remove('overflow-hidden')}
+            } to="About" smooth={true} duration={500} offset={-120} className="cursor-pointer px-4 py-2"><NavGradientText text="About" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></h1>
+            <h1  className='text-white font-josefin text-3xl'><Link  onClick={()=>{setmenu(false)
+              document.body.classList.remove('overflow-hidden')
+            }} to="Skills" smooth={true} duration={500} offset={-120} className="cursor-pointer px-4 py-2"><NavGradientText text="Skills" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></h1>
+            <h1  className='text-white font-josefin text-3xl'><Link  onClick={()=>{setmenu(false)
+              document.body.classList.remove('overflow-hidden')
+            }} to="Projects" smooth={true} duration={500} offset={-120} className="cursor-pointer px-4 py-2"><NavGradientText text="Projects" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></h1>
+            <h1  className='text-white font-josefin text-3xl'><Link  onClick={()=>{setmenu(false)
+              document.body.classList.remove('overflow-hidden')
+            }} to="Education" smooth={true} duration={500} offset={-120} className="cursor-pointer px-4 py-2"><NavGradientText text="Education" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></h1>
         </div>
         <div className='flex justify-between text-[#00FFFF] gap-10 xl:mr-10 ml-10 font-josefin'>
         <p className="cursor-pointer hover:-translate-y-1 duration-300 lg:block hidden"><Link to="Home" smooth={true} duration={500} offset={-100} className="cursor-pointer px-4 py-2"><NavGradientText text="Home" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></p>
