@@ -17,7 +17,6 @@ import VantaHalo from './components/vantahalo.jsx';
 // const [menu, setmenu] = useState(false);
 
 function App() {
-  const [count, setCount] = useState(0)
   const skills = [
   { Icon: FaReact, name: "React" },
   { Icon: FaNodeJs, name: "Node" },
@@ -76,7 +75,7 @@ const projects=[
           <div className='flex md:flex-row flex-col justify-center items-center md:items-start text-align-center xl:gap-50 gap-30 text-white m-10'>
             <div className='max-w-80 max-h-80'>
   <Fade>
-    <div className="border-8 md:m-2 border-purple-500 rounded-lg shadow-2xl">
+    <div className="border-8 md:mt-2 border-purple-500 rounded-lg shadow-2xl">
       <img src={me1} alt="Me" className="object-cover" />
     </div>
   </Fade>

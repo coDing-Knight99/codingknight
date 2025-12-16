@@ -3,8 +3,6 @@
 *{
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
-  background-color: black;
-  
   /* color: #47f0cc;  */
 }
 
@@ -12,6 +10,26 @@
   font-family: "VT323", monospace;
   font-weight: 400;
   font-style: normal;
+}
+
+.gradient-border {
+  position: relative;
+  border-radius: 1rem; /* rounded-2xl */
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px; /* border width */
+  background: linear-gradient(to right, #60a5fa, #a855f7, #ec4899);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
 }
 
 
@@ -47,4 +65,5 @@ html {
 body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
+  background-color: black;
 }
