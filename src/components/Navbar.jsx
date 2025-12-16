@@ -11,8 +11,10 @@ const Navbar = () => {
             <h1 className='font-josefin text-5xl text-red-600'>/</h1>
             <h1 className='font-josefin text-5xl text-white'>K</h1>
         </div>
-        <div className={`flex flex-col justify-center items-center fixed top-0 left-0 h-screen overflow-hidden ${menu?'w-full':'w-0' } transition-[width] duration-400 backdrop-blur border-gray-300/220 gap-8 md:bg-white/10 z-50`}>
-            <h1 onClick={()=>setmenu(false)} className='absolute top-30 right-15 text-red-600 font-josefin text-3xl'><XIcon/></h1>
+        <div className={`flex flex-col justify-center items-center fixed top-0 left-0 h-screen overflow-hidden ${menu?'w-full':'w-0' } transition-[width] duration-400 backdrop-blur border-gray-500/100 bg-black/70 gap-8 z-50`}>
+            <h1 onClick={()=>{setmenu(false)
+              document.body.classList.remove('overflow-hidden');
+            }} className='absolute top-30 right-15 text-red-600 font-josefin text-3xl'><XIcon/></h1>
             <h1  className='text-white font-josefin text-3xl'><Link  onClick={()=>setmenu(false)} to="Home" smooth={true} duration={500} offset={-120} className="cursor-pointer px-4 py-2"><NavGradientText text="Home" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></h1>
             <h1  className='text-white font-josefin text-3xl'><Link  onClick={()=>setmenu(false)} to="About" smooth={true} duration={500} offset={-120} className="cursor-pointer px-4 py-2"><NavGradientText text="About" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></h1>
             <h1  className='text-white font-josefin text-3xl'><Link  onClick={()=>setmenu(false)} to="Skills" smooth={true} duration={500} offset={-120} className="cursor-pointer px-4 py-2"><NavGradientText text="Skills" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></h1>
@@ -25,7 +27,11 @@ const Navbar = () => {
         <p className="cursor-pointer hover:-translate-y-1 duration-300 lg:block hidden"><Link to="Skills" smooth={true} duration={500} offset={-100} className="cursor-pointer px-4 py-2"><NavGradientText text="Skills" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></p>
         <p className="cursor-pointer hover:-translate-y-1 duration-300 lg:block hidden"><Link to="Projects" smooth={true} duration={500} offset={-100} className="cursor-pointer px-4 py-2"><NavGradientText text="Projects" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></p>
         <p className="cursor-pointer hover:-translate-y-1 duration-300 lg:block hidden"><Link to="Education" smooth={true} duration={500} offset={-100} className="cursor-pointer px-4 py-2"><NavGradientText text="Education" gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"/></Link></p>
-        <div onClick={()=>setmenu(true)} className='cursor-pointer lg:hidden flex justify-center items-center'><MenuIcon /></div>
+        <div onClick={()=>{
+          setmenu(true)
+          document.body.classList.add('overflow-hidden');
+        }
+        } className='cursor-pointer lg:hidden flex justify-center items-center'><MenuIcon /></div>
         </div>
     </div>
   )
