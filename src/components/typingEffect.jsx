@@ -1,7 +1,7 @@
 import { ReactTyped } from "react-typed";  
 const MyComponent = () => {
   const handleResume = ()=>{  
-    window.open('https://drive.google.com/uc?export=download&id=1c7gtqEJTMthsJ_KI9TXQwoLcB_jE8k-7','_blank');
+    window.open('https://drive.google.com/file/d/1c7gtqEJTMthsJ_KI9TXQwoLcB_jE8k-7/view?usp=sharing','_blank');
   }
 
   return(
