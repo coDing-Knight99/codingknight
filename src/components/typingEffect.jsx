@@ -3,7 +3,6 @@ const MyComponent = () => {
   const handleResume = ()=>{  
     window.open('https://drive.google.com/file/d/1c7gtqEJTMthsJ_KI9TXQwoLcB_jE8k-7/view?usp=sharing','_blank');
   }
-
   return(
 
   <div className="bg-transparent mt-30">

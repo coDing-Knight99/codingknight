@@ -7,13 +7,14 @@ import './App.css'
 import GradientText from './components/gradienttext.jsx'
 import me1 from './assets/me1.jpg'
 import { FaReact, FaNodeJs, FaPython, FaGit, FaJava } from "react-icons/fa";
-import { SiMongodb,SiTailwindcss,SiExpress,SiGithub,SiJavascript,SiCplusplus,SiC,SiLinkedin,SiCodechef,SiLeetcode,SiCodeforces } from 'react-icons/si';
+import { SiMongodb,SiTailwindcss,SiExpress,SiGithub,SiJavascript,SiCplusplus,SiC,SiLinkedin,SiCodechef,SiLeetcode,SiCodeforces, SiRedis, SiDocker, SiMysql } from 'react-icons/si';
 import AnimatedSkillCard from './components/animatedSkillCard.jsx';
 import Profile from './components/Profile.jsx';
 import { code, div } from 'framer-motion/client';
 import ProjectCard from './components/ProjectCard.jsx';
 import EducationCard from './components/EducationCard.jsx';
 import VantaHalo from './components/vantahalo.jsx';
+import APIPulse from './assets/APIPulse.png'
 // const [menu, setmenu] = useState(false);
 
 function App() {
@@ -30,12 +31,16 @@ function App() {
   { Icon: SiJavascript, name: "JavaScript" },
   { Icon: SiCplusplus, name: "C++" },
   { Icon: SiC, name: "C" },
+  { Icon:SiRedis, name:"Redis"},
+  { Icon:SiDocker, name:"Docker"},
+  { Icon:SiMysql, name:"MySQL"},
+  
 ];
 const projects=[
   {title:"CineRush", description:"A Movie Ticket Booking Platform",image:"https://dx35vtwkllhj9.cloudfront.net/universalstudios/jurassic-world-rebirth/images/regions/us/updates1/onesheet.jpg",demo:"https://cine-rush-six.vercel.app/",code:"https://github.com/coDing-Knight99/CineRush"},
   {title:"Twitter Clone", description:"A Twitter(X) Frontend Clone",image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOfF9HqKARerlalRgX3icOlm2Dj3CXhcY7ai_picX_7KqawOrLcg2HelTKt8RjIfFwQVE&usqp=CAU",demo:"https://cine-rush-six.vercel.app/",code:"https://github.com/coDing-Knight99/CineRush"},
   {title:"CodeCache", description:"A Code Snippet Organizer", image:"https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",demo:"https://code-cache-two.vercel.app/",code:"https://github.com/coDing-Knight99/CodeCache"},
-  {title:"Project X",description:"Comming Soon...",image:"https://i.pinimg.com/564x/f9/28/e2/f928e27b6513d0d9c25a1b80293b12d1.jpg",demo:"",code:""},
+  {title:"API-Pulse",description:"An API-Gateway and Analytics Platform",image:APIPulse,demo:"https://api-pulse-frontend.vercel.app/landing",code:"https://github.com/coDing-Knight99/API-Pulse.git"},
 ]
   return (
     <div className="w-screen overflow-x-hidden">
@@ -85,7 +90,7 @@ const projects=[
                <p ><GradientText
         text="I"
         gradient="linear-gradient(90deg, #3b82f6 0%, #a855f7 50%, #ec4899 100%)"
-      />{" "} am a second-year Computer Science undergraduate at IIIT Kota, with a strong passion for competitive programming and backend development. Through competitive programming, I have developed a solid foundation in data structures, algorithms, and problem-solving techniques, which has strengthened my analytical thinking and ability to approach challenges with efficiency and precision.
+      />{" "} am a pre-final year Computer Science undergraduate at IIIT Kota, with a strong passion for competitive programming and backend development. Through competitive programming, I have developed a solid foundation in data structures, algorithms, and problem-solving techniques, which has strengthened my analytical thinking and ability to approach challenges with efficiency and precision.
 
 Beyond coding contests, I am deeply interested in designing and implementing scalable backend systems. I enjoy exploring technologies that power modern applications, focusing on writing clean, maintainable, and optimized code that enhances performance and reliability.
 
@@ -93,9 +98,7 @@ Looking ahead, I aim to further deepen my skills in system design, software engi
 
             <div className='flex xl:gap-3 mt-15 align-items-center justify-center'>
               <Profile Icon={SiLinkedin} link={"https://www.linkedin.com/in/dhruv-kanojia-8396a731a/"}/>
-              <Profile Icon={SiLeetcode} link={"https://leetcode.com/u/coDing__Knight/"}/>
-              <Profile Icon={SiCodechef} link={"https://www.codechef.com/users/codingknight99"}/>
-              <Profile Icon={SiCodeforces} link={"https://codeforces.com/profile/CodingDkan"}/>
+              
             </div>
             </div>
           </div>
