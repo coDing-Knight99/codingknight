@@ -15,6 +15,7 @@ import ProjectCard from './components/ProjectCard.jsx';
 import EducationCard from './components/EducationCard.jsx';
 import VantaHalo from './components/vantahalo.jsx';
 import APIPulse from './assets/APIPulse.png'
+import GoChat from './assets/GoChat.png'
 // const [menu, setmenu] = useState(false);
 
 function App() {
@@ -37,9 +38,9 @@ function App() {
   
 ];
 const projects=[
-  {title:"CineRush", description:"A Movie Ticket Booking Platform",image:"https://dx35vtwkllhj9.cloudfront.net/universalstudios/jurassic-world-rebirth/images/regions/us/updates1/onesheet.jpg",demo:"https://cine-rush-six.vercel.app/",code:"https://github.com/coDing-Knight99/CineRush"},
-  {title:"CodeCache", description:"A Code Snippet Organizer", image:"https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",demo:"https://code-cache-two.vercel.app/",code:"https://github.com/coDing-Knight99/CodeCache"},
   {title:"API-Pulse",description:"An API-Gateway and Analytics Platform",image:APIPulse,demo:"https://api-pulse-frontend.vercel.app/landing",code:"https://github.com/coDing-Knight99/API-Pulse.git"},
+  {title:"CodeCache", description:"A Code Snippet Organizer", image:"https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",demo:"https://code-cache-two.vercel.app/",code:"https://github.com/coDing-Knight99/CodeCache"},
+  {title:"GoChat", description:"A Real Time Chat Application built in Go",image:GoChat,demo:"https://go-chat-frontend-omega.vercel.app/",code:"https://github.com/coDing-Knight99/GoChat"},
 ]
   return (
     <div className="w-screen overflow-x-hidden">
