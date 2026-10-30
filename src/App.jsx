@@ -5,9 +5,9 @@ import VantaRings from './components/vantaring'
 import {MyComponent} from './components/typingEffect.jsx'
 import './App.css'
 import GradientText from './components/gradienttext.jsx'
-import me1 from './assets/me1.jpg'
-import { FaReact, FaNodeJs, FaPython, FaGit, FaJava } from "react-icons/fa";
-import { SiMongodb,SiTailwindcss,SiExpress,SiGithub,SiJavascript,SiCplusplus,SiC,SiLinkedin,SiCodechef,SiLeetcode,SiCodeforces, SiRedis, SiDocker, SiMysql } from 'react-icons/si';
+import profilepic from './assets/profilepic.jpeg'
+import { FaReact, FaNodeJs, FaPython, FaGit, FaJava, FaHtml5, FaCss3 } from "react-icons/fa";
+import { SiMongodb,SiTailwindcss,SiExpress,SiGithub,SiJavascript,SiCplusplus,SiC,SiLinkedin,SiCodechef,SiLeetcode,SiCodeforces, SiRedis, SiDocker, SiMysql, SiPostgresql, SiPostman, SiApachejmeter, SiApache, SiApachekafka, SiVscodium } from 'react-icons/si';
 import AnimatedSkillCard from './components/animatedSkillCard.jsx';
 import Profile from './components/Profile.jsx';
 import { code, div } from 'framer-motion/client';
@@ -16,6 +16,7 @@ import EducationCard from './components/EducationCard.jsx';
 import VantaHalo from './components/vantahalo.jsx';
 import APIPulse from './assets/APIPulse.png'
 import GoChat from './assets/GoChat.png'
+import { FaGolang } from 'react-icons/fa6';
 // const [menu, setmenu] = useState(false);
 
 function App() {
@@ -23,19 +24,23 @@ function App() {
   { Icon: FaReact, name: "React" },
   { Icon: FaNodeJs, name: "Node" },
   { Icon: FaPython, name: "Python" },
+  { Icon: FaHtml5, name:"HTML"},
+  { Icon: FaCss3, name:"CSS"},
   { Icon: FaGit, name: "Git" },
   { Icon: SiGithub, name: "Git Hub" },
   { Icon: SiMongodb, name: "Mongo" },
   { Icon: SiTailwindcss, name: "Tailwind" },
   { Icon: SiExpress, name: "Express" },
   { Icon: FaJava, name: "Java" },
+  { Icon:FaGolang, name:"Go"},
   { Icon: SiJavascript, name: "JavaScript" },
   { Icon: SiCplusplus, name: "C++" },
   { Icon: SiC, name: "C" },
-  { Icon:SiRedis, name:"Redis"},
-  { Icon:SiDocker, name:"Docker"},
-  { Icon:SiMysql, name:"MySQL"},
-  
+  { Icon: SiRedis, name:"Redis"},
+  { Icon: SiDocker, name:"Docker"},
+  { Icon: SiMysql, name:"MySQL"},
+  { Icon: SiPostgresql, name:"PostgreSQL"},
+  { Icon: SiPostman, name:"Postman"},
 ];
 const projects=[
   {title:"API-Pulse",description:"An API-Gateway and Analytics Platform",image:APIPulse,demo:"https://api-pulse-frontend.vercel.app/landing",code:"https://github.com/coDing-Knight99/API-Pulse.git"},
@@ -81,7 +86,7 @@ const projects=[
             <div className='max-w-80 max-h-80'>
   <Fade>
     <div className="border-8 md:mt-2 border-purple-500 rounded-lg shadow-2xl">
-      <img src={me1} alt="Me" className="object-cover" />
+      <img src={profilepic  } alt="Me" className="object-cover" />
     </div>
   </Fade>
             </div>
